@@ -30,9 +30,11 @@ const theme = extendTheme({
 })
 
 function MyApp({ Component, pageProps }) {
-  ;<ChakraProvider theme={theme}>
-    return <Component {...pageProps} />
-  </ChakraProvider>
+  return (
+    <ChakraProvider theme={theme}>
+      return <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
 export default MyApp
