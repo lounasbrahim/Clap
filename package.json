@@ -43,6 +43,7 @@
     "@dh-react-hooks/use-raf": "^0.9.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@next/font": "^13.0.5",
     "@prisma/client": "^4.6.1",
     "bcrypt": "^5.1.0",
     "cookie": "^0.5.0",
