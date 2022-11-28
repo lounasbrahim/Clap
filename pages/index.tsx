@@ -12,7 +12,14 @@ export default function Home({ children }) {
         <title>Clap - App</title>
       </Head>
       <PlayerLayout>
-        <SimpleGrid columns={3} spacing={10}>
+        <SimpleGrid ml={30} zIndex={0} columns={3} spacing={10}>
+          <SongCard />
+          <SongCard />
+          <SongCard />
+          <SongCard />
+          <SongCard />
+          <SongCard />
+          <SongCard />
           <SongCard />
           <SongCard />
           <SongCard />

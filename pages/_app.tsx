@@ -29,8 +29,8 @@ const theme = extendTheme({
   },
   styles: {
     global: {
-      'html, body': {
-        height: '100vh',
+      body: {
+        height: '100%',
         bgGradient: 'linear(to-tr, black, red.900)',
         backdropFilter: 'auto',
         backdropBlur: 'blur(42px)',

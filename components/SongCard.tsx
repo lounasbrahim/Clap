@@ -39,8 +39,8 @@ const SoundCard = () => {
 
         <Box pos="absolute" top="0" right="0">
           <NextImage
-            width={40}
-            height={40}
+            width={80}
+            height={80}
             alt="card"
             src="/icons/like.svg"
           ></NextImage>
