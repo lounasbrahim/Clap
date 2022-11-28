@@ -4,6 +4,7 @@ import { Montserrat } from '@next/font/google'
 const theme = extendTheme({
   color: {
     red: {
+      400: '#E33434',
       900: '#510B0B'
     },
     gray: {
