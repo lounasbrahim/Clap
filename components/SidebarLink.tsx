@@ -1,11 +1,11 @@
-import { ListItem ,  HStack, Text} from "@chakra-ui/layout";
+import { ListItem, HStack, Text } from '@chakra-ui/layout'
 import NextImage from 'next/image'
-import Link  from "next/link";
+import NextLink from 'next/link'
 
-const SidebarLink = ({svgIcon , itemText}) => {
-    return ( 
+const SidebarLink = ({ svgIcon, itemText }) => {
+  return (
     <ListItem mb={35}>
-        <Link href="/">
+      <NextLink href="/">
         <HStack>
           <NextImage
             alt={itemText}
@@ -15,9 +15,9 @@ const SidebarLink = ({svgIcon , itemText}) => {
           ></NextImage>
           <Text>{itemText}</Text>
         </HStack>
-        </Link>
-      </ListItem> );
+      </NextLink>
+    </ListItem>
+  )
 }
- 
-export default SidebarLink;
 
+export default SidebarLink
