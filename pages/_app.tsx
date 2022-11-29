@@ -29,11 +29,16 @@ const theme = extendTheme({
   },
   styles: {
     global: {
-      body: {
-        height: '100%',
+      html: {
+        minHeight: '100%',
         bgGradient: 'linear(to-tr, black, red.900)',
         backdropFilter: 'auto',
         backdropBlur: 'blur(42px)',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      },
+      body: {
+        bgColor: 'rgba(200,200,200,0.1)',
         color: 'white',
         fontFamily: 'Montserrat'
       }
