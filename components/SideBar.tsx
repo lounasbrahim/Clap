@@ -3,7 +3,11 @@ import { Box, HStack, VStack, Text, Heading, List } from '@chakra-ui/layout'
 
 import SidebarItems from '../components/SidebarItems'
 import BrandLogo from '../components/BrandLogo'
-import { libraryLinks, exploreLinks, playlistLinks } from '../utils/itemLinks'
+import {
+  libraryLinks,
+  exploreLinks,
+  playlistLinks
+} from '../utils/SideBarItemsObj'
 
 const SideBar = () => {
   return (
