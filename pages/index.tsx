@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { SimpleGrid } from '@chakra-ui/layout'
+import { Box, Heading, Text } from '@chakra-ui/layout'
 
 import PlayerLayout from '../components/PlayerLayout'
-import SongCard from '../components/SongCard'
+import SongsGrid from '../components/SongsGrid'
 
 export default function Home({ children }) {
   return (
@@ -12,17 +12,14 @@ export default function Home({ children }) {
         <title>Clap - App</title>
       </Head>
       <PlayerLayout>
-        <SimpleGrid zIndex={0} columns={3} spacing="12px" pb="140px">
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-          <SongCard />
-        </SimpleGrid>
+        <Box pb="140px">
+          <Box mb="25px">
+            <Heading>
+              <Text>Discover</Text>
+            </Heading>
+          </Box>
+          <SongsGrid />
+        </Box>
       </PlayerLayout>
     </>
   )
