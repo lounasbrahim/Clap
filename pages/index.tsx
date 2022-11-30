@@ -1,24 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Heading, Text } from '@chakra-ui/layout'
+import { Box, Heading, Text, Flex, Spacer } from '@chakra-ui/layout'
 
 import PlayerLayout from '../components/PlayerLayout'
-import SongsGrid from '../components/SongsGrid'
+import DiscoverSection from '../components/DiscoverSection'
+import TopSongsSection from '../components/TopSongsSection'
+import TopArtistsSection from '../components/TopArtistsSection'
 
 export default function Home({ children }) {
   return (
     <>
       <Head>
-        <title>Clap - App</title>
+        <title>Home - Clap</title>
       </Head>
       <PlayerLayout>
         <Box pb="140px">
-          <Box mb="25px">
-            <Heading>
-              <Text>Discover</Text>
-            </Heading>
-          </Box>
-          <SongsGrid />
+          <Flex>
+            <Box w="calc(60% - 75px)">
+              <DiscoverSection />
+            </Box>
+            <Spacer />
+            <Box w="40%">
+              <TopSongsSection />
+              <TopArtistsSection />
+            </Box>
+          </Flex>
         </Box>
       </PlayerLayout>
     </>

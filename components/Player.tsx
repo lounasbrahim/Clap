@@ -1,5 +1,6 @@
 import { Box, Text, HStack, Flex, Spacer } from '@chakra-ui/layout'
 import NextImage from 'next/image'
+import ArtistsItem from './ArtistsItem'
 
 const Player = () => {
   return (
@@ -20,7 +21,7 @@ const Player = () => {
     >
       <Box>
         <HStack>
-          <NextImage width={90} height={90} alt={'song'} src={'/logo.svg'} />
+          <ArtistsItem />
           <Box pl="15px">
             <Text fontWeight="bold" fontSize="15px">
               Lonely
