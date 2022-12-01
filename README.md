@@ -1,5 +1,5 @@
 # Clap - App 
-a music player built with : Next 13 / prisma / Apollo client / GraphQl / Nodejs(express) (in progress)
+a music player built with : Next 13 / prisma / Apollo client / GraphQl 
 
 </br>
 
