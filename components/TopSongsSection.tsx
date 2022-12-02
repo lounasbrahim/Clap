@@ -1,8 +1,6 @@
-import { Box, Heading, Text } from '@chakra-ui/layout'
+import { Box, Heading, Text } from "@chakra-ui/layout";
 
-import NextImage from 'next/image'
-
-import PlaylistItem from './PlaylistItem'
+import PlaylistItem from "./PlaylistItem";
 
 const TopSongsSection = () => {
   return (
@@ -20,7 +18,7 @@ const TopSongsSection = () => {
         <PlaylistItem />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default TopSongsSection
+export default TopSongsSection;

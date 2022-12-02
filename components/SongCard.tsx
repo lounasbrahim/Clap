@@ -1,5 +1,5 @@
-import { Box, Text } from '@chakra-ui/react'
-import NextImage from 'next/image'
+import { Box, Text } from "@chakra-ui/react";
+import NextImage from "next/image";
 
 const SoundCard = () => {
   return (
@@ -21,7 +21,7 @@ const SoundCard = () => {
           //   bgGradient="linear(to-r, green.200, pink.500)"
           rounded="lg"
           overflow="hidden"
-          background={'linear(to-tr, black, red.900)'}
+          background="linear(to-tr, black, red.900)"
           backdropFilter="auto"
           backdropBlur="blur(42px)"
           zIndex={1}
@@ -38,12 +38,7 @@ const SoundCard = () => {
         </Box>
 
         <Box pos="absolute" top="0" right="0">
-          <NextImage
-            width={80}
-            height={80}
-            alt="card"
-            src="/icons/like.svg"
-          ></NextImage>
+          <NextImage width={80} height={80} alt="card" src="/icons/like.svg" />
         </Box>
 
         <Box w="100%" pos="absolute" bottom="2" left="2">
@@ -52,7 +47,7 @@ const SoundCard = () => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default SoundCard
+export default SoundCard;

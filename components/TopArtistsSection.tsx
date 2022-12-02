@@ -1,7 +1,6 @@
-import { Box, Heading, Text, HStack } from '@chakra-ui/layout'
-import NextImage from 'next/image'
+import { Box, Heading, Text, HStack } from "@chakra-ui/layout";
 
-import ArtistsItem from './ArtistsItem'
+import ArtistsItem from "./ArtistsItem";
 
 const TopArtistsSection = () => {
   return (
@@ -12,17 +11,29 @@ const TopArtistsSection = () => {
         </Heading>
       </Box>
       <Box w="100%" pr="37px">
-        <HStack>
-          <ArtistsItem />
-          <ArtistsItem />
-          <ArtistsItem />
-          <ArtistsItem />
-          <ArtistsItem />
-          <ArtistsItem />
+        <HStack w="100%" overflowX="hidden">
+          <Box>
+            <ArtistsItem />
+          </Box>
+          <Box>
+            <ArtistsItem />
+          </Box>
+          <Box>
+            <ArtistsItem />
+          </Box>
+          <Box>
+            <ArtistsItem />
+          </Box>
+          <Box>
+            <ArtistsItem />
+          </Box>
+          <Box>
+            <ArtistsItem />
+          </Box>
         </HStack>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default TopArtistsSection
+export default TopArtistsSection;

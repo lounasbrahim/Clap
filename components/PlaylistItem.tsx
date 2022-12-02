@@ -1,10 +1,10 @@
-import { Box, Text, HStack, Flex, Spacer } from '@chakra-ui/layout'
-import NextImage from 'next/image'
+import { Box, Text, HStack, Flex, Spacer } from "@chakra-ui/layout";
+import NextImage from "next/image";
 
 const PlaylistItem = () => {
   return (
     <Flex
-      bg={'rgba(0,0,0,0.07)'}
+      bg="rgba(0,0,0,0.07)"
       padding={3}
       rounded="2xl"
       backdropFilter="auto"
@@ -49,7 +49,7 @@ const PlaylistItem = () => {
         </HStack>
       </Box>
     </Flex>
-  )
-}
+  );
+};
 
-export default PlaylistItem
+export default PlaylistItem;

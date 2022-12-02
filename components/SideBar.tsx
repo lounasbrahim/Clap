@@ -1,13 +1,12 @@
-import NextImage from 'next/image'
-import { Box, HStack, VStack, Text, Heading, List } from '@chakra-ui/layout'
+import { Box } from "@chakra-ui/layout";
 
-import SidebarItems from '../components/SidebarItems'
-import BrandLogo from '../components/BrandLogo'
+import SidebarItems from "./SidebarItems";
+import BrandLogo from "./BrandLogo";
 import {
   libraryLinks,
   exploreLinks,
-  playlistLinks
-} from '../utils/SideBarItemsObj'
+  playlistLinks,
+} from "../utils/SideBarItemsObj";
 
 const SideBar = () => {
   return (
@@ -16,17 +15,18 @@ const SideBar = () => {
       pl={51}
       pt={51}
       overflow="auto"
-      height={'100vh'}
+      height="100vh"
       sx={{
-        '&::-webkit-scrollbar, &::-moz-scrollbar': {
-          width: '10px',
-          borderRadius: '8px',
-          backgroundColor: `rgba(0, 0, 0, 0.0)`
+        "&::-webkit-scrollbar, &::-moz-scrollbar": {
+          width: "10px",
+          borderRadius: "8px",
+          backgroundColor: `rgba(0, 0, 0, 0.0)`,
         },
-        '&::-webkit-scrollbar-thumb, &::-moz-scrollbar': {
-          backgroundColor: `rgba(0, 0, 0, 0.05)`
-        }
+        "&::-webkit-scrollbar-thumb, &::-moz-scrollbar": {
+          backgroundColor: `rgba(0, 0, 0, 0.05)`,
+        },
       }}
+      zIndex={0}
     >
       <BrandLogo />
       <SidebarItems {...libraryLinks} />
@@ -35,7 +35,7 @@ const SideBar = () => {
         <SidebarItems {...playlistLinks} />
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

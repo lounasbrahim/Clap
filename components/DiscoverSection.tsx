@@ -1,5 +1,5 @@
-import { SimpleGrid, Box, Heading, Text } from '@chakra-ui/layout'
-import SongCard from '../components/SongCard'
+import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/layout";
+import SongCard from "./SongCard";
 
 const SongsGrid = () => {
   return (
@@ -21,7 +21,7 @@ const SongsGrid = () => {
         <SongCard />
       </SimpleGrid>
     </Box>
-  )
-}
+  );
+};
 
-export default SongsGrid
+export default SongsGrid;

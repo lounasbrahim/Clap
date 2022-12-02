@@ -1,6 +1,6 @@
-import { Box, Text, HStack, Flex, Spacer } from '@chakra-ui/layout'
-import NextImage from 'next/image'
-import ArtistsItem from './ArtistsItem'
+import { Box, Text, HStack, Flex, Spacer } from "@chakra-ui/layout";
+import NextImage from "next/image";
+import ArtistsItem from "./ArtistsItem";
 
 const Player = () => {
   return (
@@ -33,7 +33,7 @@ const Player = () => {
       <Spacer />
       <Box>
         <NextImage
-          alt={'play'}
+          alt="play"
           width={40}
           height={40}
           src="/icons/pauseSong.svg"
@@ -41,15 +41,10 @@ const Player = () => {
       </Box>
       <Spacer />
       <Box>
-        <NextImage
-          alt={'sound'}
-          width={30}
-          height={30}
-          src="/icons/sound.svg"
-        />
+        <NextImage alt="sound" width={30} height={30} src="/icons/sound.svg" />
       </Box>
     </Flex>
-  )
-}
+  );
+};
 
-export default Player
+export default Player;

@@ -1,6 +1,6 @@
-import { Box, HStack, Flex, Spacer } from '@chakra-ui/layout'
-import NextImage from 'next/image'
-import { Input } from '@chakra-ui/react'
+import { Box, HStack, Flex, Spacer } from "@chakra-ui/layout";
+import NextImage from "next/image";
+import { Input } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
@@ -40,7 +40,7 @@ const NavBar = () => {
         </HStack>
       </Box>
     </Flex>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

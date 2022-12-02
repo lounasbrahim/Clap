@@ -1,6 +1,6 @@
-import { HStack, ListItem, Text } from '@chakra-ui/layout'
-import NextImage from 'next/image'
-import NextLink from 'next/link'
+import { HStack, ListItem, Text } from "@chakra-ui/layout";
+import NextImage from "next/image";
+import NextLink from "next/link";
 
 const SidebarLink = ({ text, svgIcon, route }) => {
   return (
@@ -12,12 +12,12 @@ const SidebarLink = ({ text, svgIcon, route }) => {
             src={`/icons/${svgIcon}.svg`}
             width={22}
             height={22}
-          ></NextImage>
+          />
           <Text>{text}</Text>
         </HStack>
       </NextLink>
     </ListItem>
-  )
-}
+  );
+};
 
-export default SidebarLink
+export default SidebarLink;

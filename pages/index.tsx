@@ -1,20 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Box, Heading, Text, Flex, Spacer } from '@chakra-ui/layout'
+import Head from "next/head";
+import { Box, Flex, Spacer } from "@chakra-ui/layout";
 
-import PlayerLayout from '../components/PlayerLayout'
-import DiscoverSection from '../components/DiscoverSection'
-import TopSongsSection from '../components/TopSongsSection'
-import TopArtistsSection from '../components/TopArtistsSection'
+import PlayerLayout from "../components/PlayerLayout";
+import DiscoverSection from "../components/DiscoverSection";
+import TopSongsSection from "../components/TopSongsSection";
+import TopArtistsSection from "../components/TopArtistsSection";
 
-export default function Home({ children }) {
+const Home = () => {
   return (
     <>
       <Head>
         <title>Home - Clap</title>
       </Head>
       <PlayerLayout>
-        <Box pb="140px">
+        <Box pb="140px" zIndex={1}>
           <Flex>
             <Box w="calc(60% - 75px)">
               <DiscoverSection />
@@ -28,5 +27,7 @@ export default function Home({ children }) {
         </Box>
       </PlayerLayout>
     </>
-  )
-}
+  );
+};
+
+export default Home;
