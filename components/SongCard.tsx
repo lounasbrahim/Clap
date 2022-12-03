@@ -11,11 +11,7 @@ const SoundCard = () => {
       boxShadow={2}
       mb="12px"
     >
-      <Box
-        w="100%"
-        pos="absolute"
-        //   'linear-gradient(180deg, rgba(227, 52, 52, 0.22) 0%, rgba(0, 0, 0, 0.77) 72.92%)'
-      >
+      <Box w="100%" pos="absolute">
         <Box
           w="100%"
           //   bgGradient="linear(to-r, green.200, pink.500)"

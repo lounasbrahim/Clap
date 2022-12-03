@@ -26,7 +26,7 @@
   "homepage": "https://github.com/lounasbrahim/Clap#readme",
   "devDependencies": {
     "@types/node": "^18.11.10",
-    "@types/react": "^18.0.26",
+    "@types/react": "^18.0.1",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "babel-plugin-superjson-next": "^0.4.2",
