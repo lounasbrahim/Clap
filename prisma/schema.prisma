@@ -10,16 +10,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id Int @id @default(autoincrement())
+  Name String?
+  email String @unique
+  password String 
+  playlists Playlist[]
+}
+
 model Artist {
   id Int @id @default(autoincrement())
   Name String 
+  thumbnails String?
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
   songs Song[]
   albums Album[]
 }
 
 model Album {
   id Int @id @default(autoincrement())
-  title String 
+  title String    
+  thumbnails String?
+  ceatedAt DateTime @default(now())
+  updateAt DateTime @updatedAt
   songs Song[]
   autors Artist[]
 }
@@ -28,16 +42,24 @@ model Song {
   id Int @id @default(autoincrement())
   title String 
   duration Int
+  thumbnails String?
+  createAt DateTime @default(now())
+  updateAf DateTime @updatedAt
   authors Artist[]
   album Album @relation(fields: [albumId], references: [id])
   albumId Int
+
   playlists Playlist[]
 }
 
 model Playlist {
   id Int @id @default(autoincrement())
   title String 
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
   songs Song[]
+  user User? @relation(fields: [userId], references: [id])
+  userId Int?
 }
 
 
