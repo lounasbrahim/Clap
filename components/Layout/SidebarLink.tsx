@@ -4,7 +4,7 @@ import NextLink from "next/link";
 
 const SidebarLink = ({ text, svgIcon, route }) => {
   return (
-    <ListItem key={Date.now()} mb={35}>
+    <ListItem mb={35}>
       <NextLink href={route} passHref>
         <HStack>
           <NextImage

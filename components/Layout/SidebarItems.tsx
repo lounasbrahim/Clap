@@ -11,7 +11,7 @@ const SidebarItems = ({ heading, links }) => {
       )}
       <List pl={2}>
         {links.map((link) => {
-          return <SidebarLink {...link} />;
+          return <SidebarLink key={Date.now()} {...link} />;
         })}
       </List>
     </Box>
