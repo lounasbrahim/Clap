@@ -6,7 +6,7 @@ import {
   libraryLinks,
   exploreLinks,
   playlistLinks,
-} from "../utils/SideBarItemsObj";
+} from "../../utils/SideBarItemsObj";
 
 const SideBar = () => {
   return (

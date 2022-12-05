@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Box, Flex, Spacer } from "@chakra-ui/layout";
 
-import PlayerLayout from "../components/PlayerLayout";
+import PlayerLayout from "../components/Layout";
 import DiscoverSection from "../components/DiscoverSection";
 import TopSongsSection from "../components/TopSongsSection";
 import TopArtistsSection from "../components/TopArtistsSection";

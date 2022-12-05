@@ -1,6 +1,6 @@
 import { Box, Text, HStack, Flex, Spacer } from "@chakra-ui/layout";
 import NextImage from "next/image";
-import ArtistsItem from "./ArtistsItem";
+import ArtistsItem from "../ArtistsItem";
 
 const Player = () => {
   return (
@@ -15,7 +15,7 @@ const Player = () => {
       backdropInvert="10%"
       backdropBlur="12px"
       borderRadius="20px 20px 0px 0px"
-      height="140px"
+      height="120px"
       zIndex="1"
       paddingX="60px"
     >
