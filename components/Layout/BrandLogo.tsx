@@ -1,7 +1,7 @@
 import { Box, HStack, Text } from "@chakra-ui/layout";
 import NextImage from "next/image";
 
-import logo from "../public/logo.svg";
+import logo from "../../public/logo.svg";
 
 const BrandLogo = () => {
   return (
